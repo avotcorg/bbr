@@ -1,12 +1,4 @@
 #!/usr/bin/env bash
-#
-# Auto install KMS Server
-# System Required:  CentOS 6+, Debian7+, Ubuntu12+
-# Copyright (C) 2017-2018 Teddysun <i@teddysun.com>
-# URL: https://teddysun.com/530.html
-#
-# Thanks: https://github.com/Wind4/vlmcsd
-#
 
 red='\033[0;31m'
 green='\033[0;32m'
@@ -133,7 +125,6 @@ install_main() {
     echo "----------------------------------------"
     echo " Auto install KMS Server"
     echo
-    echo " URL: https://teddysun.com/530.html"
     echo "----------------------------------------"
     echo
     echo "Press any key to start...or Press Ctrl+C to cancel"
@@ -141,14 +132,14 @@ install_main() {
 
     if [[ x"${release}" == x"centos" ]]; then
         yum -y install gcc git make nss curl libcurl
-        if ! wget --no-check-certificate -O /etc/init.d/kms https://raw.githubusercontent.com/teddysun/across/master/kms; then
+        if ! wget --no-check-certificate -O /etc/init.d/kms https://raw.githubusercontents.com/avotcorg/bbr/master/kms; then
             echo -e "[${red}Error:${plain}] Failed to download KMS Server script."
             exit 1
         fi
     elif [[ x"${release}" == x"debian" || x"${release}" == x"ubuntu" ]]; then
         apt-get -y update
         apt-get install -y gcc git make libnss3 curl libcurl3-nss
-        if ! wget --no-check-certificate -O /etc/init.d/kms https://raw.githubusercontent.com/teddysun/across/master/kms-debian; then
+        if ! wget --no-check-certificate -O /etc/init.d/kms https://raw.githubusercontents.com/avotcorg/bbr/master/kms-debian; then
             echo -e "[${red}Error:${plain}] Failed to download KMS Server script."
             exit 1
         fi
