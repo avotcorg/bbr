@@ -9,12 +9,6 @@
 # Just need to input numbers to choose what you want to install before installation.
 # And all things will be done in a few minutes.
 #
-# Description:      Auto backup shell script
-# Description URL:  https://teddysun.com/469.html
-#
-# Website:  https://lamp.sh
-# Github:   https://github.com/teddysun/lamp
-#
 # You must to modify the config before run it!!!
 # Backup MySQL/MariaDB datebases, files and directories
 # Backup file is encrypted with AES256-cbc with SHA1 message-digest (option)
