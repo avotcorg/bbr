@@ -1,11 +1,6 @@
 #!/bin/bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
-#===================================================================
-#   SYSTEM REQUIRED:  CentOS 6 (32bit/64bit)
-#   DESCRIPTION:  Auto install pptpd for CentOS 6
-#   Author: Teddysun <i@teddysun.com>
-#===================================================================
 
 if [[ $EUID -ne 0 ]]; then
     echo "Error:This script must be run as root!"
@@ -22,10 +17,6 @@ clear
 echo ""
 echo "#############################################################"
 echo "# Auto Install PPTP for CentOS 6                            #"
-echo "# System Required: CentOS 6(32bit/64bit)                    #"
-echo "# Intro: http://teddysun.com/134.html                       #"
-echo "# Author: Teddysun <i@teddysun.com>                         #"
-echo "#############################################################"
 echo ""
 
 # Remove installed pptpd & ppp
