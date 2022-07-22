@@ -2,12 +2,8 @@
 #
 # This is a Shell script for configure and start WireGuard VPN server.
 #
-# Copyright (C) 2019 - 2020 Teddysun <i@teddysun.com>
+# Copyright (C) 2019 - 2022 Teddysun <X@teddysun.com>
 #
-# Reference URL:
-# https://www.wireguard.com
-# https://git.zx2c4.com/WireGuard
-# https://teddysun.com/554.html
 
 trap _exit INT QUIT TERM
 
