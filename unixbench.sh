@@ -1,9 +1,4 @@
 #! /bin/bash
-#==============================================================#
-#   Description:  Unixbench script                             #
-#   Author: Teddysun <i@teddysun.com>                          #
-#   Intro:  https://teddysun.com/245.html                      #
-#==============================================================#
 cur_dir=/opt/unixbench
 
 # Check System
